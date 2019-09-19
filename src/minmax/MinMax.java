@@ -5,10 +5,6 @@ public class MinMax
 {
     public static Stan minmax(Stan aktualny, int tree)
     {
-        /*Stan[] s = aktualny.stanyPotomne();
-        Random generator = new Random();
-        int x = generator.nextInt(s.length);
-        return s[x];*/
         return alfabeta(aktualny, tree, Integer.MIN_VALUE, Integer.MAX_VALUE).stan;
     }
     private static pair alfabeta(Stan s, int d, int alfa, int beta)
